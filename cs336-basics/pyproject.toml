@@ -1,5 +1,5 @@
 [project]
-name = "cs336_basics"
+name = "cs336-basics"
 version = "1.0.3"
 description = "CS336 Assignment 1"
 readme = "README.md"
@@ -20,7 +20,9 @@ dependencies = [
     "wandb>=0.19.7",
 ]
 
-
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
 include = ["cs336_basics"]
